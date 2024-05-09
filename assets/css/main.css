@@ -2630,3 +2630,13 @@ body > article {
   color: white;
   font-style: normal;
 }
+
+.aboutMe-text {
+  text-align: justify;
+  width: 75%;
+  display: inline-flex;
+}
+
+.aboutMe-text p {
+  color: black;
+}
