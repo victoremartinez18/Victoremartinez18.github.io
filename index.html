@@ -11,7 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://kit.fontawesome.com/ff89619d61.js" crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
+
   <body class="is-preload">
     <!-- Nav -->
     <nav id="nav">
@@ -28,8 +35,18 @@
     <article id="top" class="wrapper style1">
       <div class="container">
         <div class="row">
-          <div class="col-4 col-5-large col-12-medium">
-            <span class="image fit"><img src="images/Profile picture.jpg" alt="" /></span>
+          <div id="animation">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://lottie.host/bea6a215-9c67-428f-be34-9997afda93c7/j4F28D0nsr.json"
+              background="##5e31ba"
+              speed="1"
+              style="width: 350px; height: 300px"
+              loop
+              autoplay
+              direction="1"
+              mode="normal"
+            ></lottie-player>
           </div>
           <div class="col-8 col-7-large col-12-medium">
             <header>
@@ -50,7 +67,13 @@
               </strong>
             </p>
 
-            <a href="#work" class="button large scrolly">Learn about what I do</a>
+            <div id="main-button-section" class="row">
+              <div>
+                <a href="#work" id="main-button" class="button large scrolly"
+                  >Learn about what I do</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -65,7 +88,24 @@
         <div class="row aln-center">
           <div class="col-4 col-6-medium col-12-small">
             <section class="box style1">
-              <span class="icon-two featured fa-brands fa-react"></span>
+              <div class="icons">
+                <div>
+                  <i class="devicon-react-original"></i>
+                  <span>React</span>
+                </div>
+                <div>
+                  <i class="devicon-javascript-plain"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div>
+                  <i class="devicon-html5-plain"></i>
+                  <span>HTML</span>
+                </div>
+                <div>
+                  <i class="devicon-css3-plain"></i>
+                  <span>CSS</span>
+                </div>
+              </div>
               <h3>Front-End Development</h3>
               <p>
                 Experienced in front-end development, specializing in
@@ -77,7 +117,20 @@
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <section class="box style1">
-              <span class="icon-two featured fa-solid fa-code"></span>
+              <div class="icons">
+                <div>
+                  <i class="devicon-dot-net-plain"></i>
+                  <span>.Net</span>
+                </div>
+                <div>
+                  <i class="devicon-csharp-plain"></i>
+                  <span>C#</span>
+                </div>
+                <div>
+                  <i class="fa fa-server" aria-hidden="true"></i>
+                  <span>API</span>
+                </div>
+              </div>
               <h3>Back-End Development</h3>
               <p>
                 Experienced in back-end development with
@@ -89,7 +142,12 @@
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <section class="box style1">
-              <span class="icon-two featured fa-solid fa-database"></span>
+              <div class="icons">
+                <div>
+                  <i class="devicon-microsoftsqlserver-plain"></i>
+                  <span>SQL Server Management Studio </span>
+                </div>
+              </div>
               <h3>Database</h3>
               <p>
                 Experienced in
@@ -100,6 +158,50 @@
                 Experienced in designing and implementing stored procedures to streamline database
                 operations.
               </p>
+            </section>
+          </div>
+          <div class="col-12">
+            <section class="box style1">
+              <h3>Other tools and technologies</h3>
+              <p>Here are some of the tools and technologies I am proficient in:</p>
+              <div class="icons row">
+                <div>
+                  <i class="devicon-jquery-plain"></i>
+                  <span>jQuery</span>
+                </div>
+                <div>
+                  <i class="devicon-bootstrap-plain"></i>
+                  <span>Bootstrap</span>
+                </div>
+                <div>
+                  <i class="devicon-python-plain"></i>
+                  <span>Python</span>
+                </div>
+                <div>
+                  <i class="devicon-git-plain"></i>
+                  <span>Git</span>
+                </div>
+                <div>
+                  <i class="devicon-github-original"></i>
+                  <span>GitHub</span>
+                </div>
+                <div>
+                  <i class="devicon-visualstudio-plain"></i>
+                  <span>Visual Studio</span>
+                </div>
+                <div>
+                  <i class="devicon-vscode-plain"></i>
+                  <span>VSCode</span>
+                </div>
+                <div>
+                  <i class="devicon-slack-plain"></i>
+                  <span>Slack</span>
+                </div>
+                <div>
+                  <i class="devicon-postman-plain"></i>
+                  <span>Postman</span>
+                </div>
+              </div>
             </section>
           </div>
         </div>
@@ -116,8 +218,10 @@
           <h2>Here’s some of my most recent work</h2>
           <p>
             Feel free to visit my
-            <a href="https://github.com/Victoremartinez18" target="_blank">GitHub</a> page for more
-            details.
+            <strong>
+              <a href="https://github.com/Victoremartinez18" target="_blank"> GitHub</a>
+            </strong>
+            page for more.
           </p>
         </header>
         <div class="row">
@@ -184,11 +288,13 @@
               <a
                 href="https://github.com/victoremartinez18/Friends-Social-Network---React.js-JavaScript-.Net-C-SQL"
                 class="image featured"
+                target="_blank"
                 ><img src="images/github/Friend List.png" alt=""
               /></a>
               <h3>
                 <a
                   href="https://github.com/victoremartinez18/Friends-Social-Network---React.js-JavaScript-.Net-C-SQL"
+                  target="_blank"
                   >Friendlist Management Tool</a
                 >
               </h3>
@@ -197,20 +303,45 @@
               </p>
             </article>
           </div>
-          <!-- <div class="col-4 col-6-medium col-12-small">
+          <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-              <h3><a href="#">Feugiat aliquam</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
+              <a
+                href="https://github.com/victoremartinez18/Credit-card-Payment-integration"
+                class="image featured"
+                target="_blank"
+                ><img src="images/github/Credit Card infomation.png" alt=""
+              /></a>
+              <h3>
+                <a
+                  href="https://github.com/victoremartinez18/Credit-card-Payment-integration"
+                  target="_blank"
+                  >Credit card Payment integration</a
+                >
+              </h3>
+              <p>A full stack implementation to integrate Credit Card Payments to a Web-App.</p>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-              <h3><a href="#">Sed amet ornare</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
+              <a
+                href="https://github.com/victoremartinez18/SQL-Database-Collection"
+                class="image featured"
+                target="_blank"
+                ><img src="images/github/database.jpg" alt=""
+              /></a>
+              <h3>
+                <a
+                  href="https://github.com/victoremartinez18/SQL-Database-Collection"
+                  target="_blank"
+                  >SQL-Database Collection</a
+                >
+              </h3>
+              <p>
+                This is a collection of database tables and stored procedures, including
+                user-defined tables.
+              </p>
             </article>
-          </div> -->
+          </div>
         </div>
         <footer>
           <a href="#aboutMe" class="button large scrolly">Learn more about me</a>
@@ -225,22 +356,30 @@
           <h2>This is who I am</h2>
         </header>
         <div class="row aboutMe-text">
-          <p>
-            Hey there! I'm Victor Martinez, a Full Stack Software Engineer deeply passionate about
-            all things tech. With experience in React.js, JavaScript, .Net, C#, Python, and more, I
-            thrive on finding innovative solutions. <br />
-            <br />
+          <div class="col-4 col-5-large col-12-medium">
+            <div><img src="images/Profile picture.jpg" alt="" /></div>
+          </div>
+          <div class="col-8 col-5-large col-12-medium">
+            <p>
+              Hey there! I'm Victor Martinez, a Full Stack Software Engineer deeply passionate about
+              all things tech.
+              <strong>With experience in React.js, JavaScript, .Net, C#, Python, and more,</strong>
+              I thrive on finding innovative solutions.
+            </p>
 
-            Currently, I'm immersed in a project where I'm crafting amazing components, API
-            controllers, and database structures. Curious about my work? Don't hesitate to reach
-            out. <br />
-            <br />
+            <p>
+              Currently, I'm immersed in a project where I'm crafting amazing components, API
+              controllers, and database structures. <strong>Curious about my work?</strong> Don't
+              hesitate to reach out.
+            </p>
 
-            When I'm not coding, you can find me lost in a captivating book, strumming tunes on my
-            guitar, or exploring the great outdoors on my mountain bike. Whether it's tech talk,
-            sharing outdoor adventures, or swapping book recommendations, I'm all ears—feel free to
-            get in touch.
-          </p>
+            <p>
+              When I'm not coding, you can find me lost in a captivating book, strumming tunes on my
+              guitar, or exploring the great outdoors on my mountain bike. Whether it's tech talk,
+              sharing outdoor adventures, or swapping book recommendations, I'm all ears—feel free
+              to get in touch.
+            </p>
+          </div>
         </div>
         <footer>
           <a href="#contact" class="button large scrolly">Get in touch with me</a>
@@ -255,30 +394,36 @@
           <h2>Get in touch with me!</h2>
         </header>
         <div class="row">
-          <!-- <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a
-                class="image-resume featured resume-download"
-                href="assets/pdf/Victor Martinez Resume.pdf"
-                download
-                ><img src="images/github/Victor Martinez Resume.jpg" alt="" />Download Resume</a
-              >
-            </article>
-          </div> -->
-
-          <div class="col-12 resume-contact">
-            <article class="style2">
-              <p>
-                <strong>Phone:</strong> (201) 949-8454<br /><br />
-                <strong>Email:</strong>
-                <a href="mailto:VictorEMartinez18cv@gmail.com">VictorEMartinez18cv@gmail.com</a
-                ><br /><br />
-                <strong>Linkedin:</strong>
-                <a href="https://www.linkedin.com/in/vm9118" target="_blank">/in/vm9118</a
-                ><br /><br />
-                <strong>Github:</strong>
-                <a href="https://github.com/VictorEMartinez18" target="_blank">VictorEMartinez18</a>
-              </p>
+          <div class="col-12 contact">
+            <article class="style2 contaUs">
+              <div>
+                <p>
+                  <strong>Phone:</strong> (201) 949-8454<br /><br />
+                  <strong>Email:</strong>
+                  <a href="mailto:VictorEMartinez18cv@gmail.com">VictorEMartinez18cv@gmail.com</a
+                  ><br /><br />
+                  <strong>Linkedin:</strong>
+                  <a href="https://www.linkedin.com/in/vm9118" target="_blank">/in/vm9118</a
+                  ><br /><br />
+                  <strong>Github:</strong>
+                  <a href="https://github.com/VictorEMartinez18" target="_blank"
+                    >VictorEMartinez18</a
+                  >
+                </p>
+              </div>
+              <div id="contact-animation">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player
+                  src="https://lottie.host/3e1a8767-7d14-4adc-a40f-0993e31b516d/k1ZGmbgmB8.json"
+                  background="##ffffff"
+                  speed="1"
+                  style="width: 300px; height: 300px"
+                  loop
+                  autoplay
+                  direction="1"
+                  mode="normal"
+                ></lottie-player>
+              </div>
             </article>
           </div>
 
